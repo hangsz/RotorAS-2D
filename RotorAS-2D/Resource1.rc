@@ -1,0 +1,352 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+#include "winver.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_log3 DIALOGEX 0, 0, 581, 330
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "求解器设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_log3_ok,495,249,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,495,287,50,14
+    CONTROL         "",ID_tab3,"SysTabControl32",0x0,18,103,456,215
+    LTEXT           "绝对路径",IDC_STATIC,47,23,33,8
+    EDITTEXT        ID_log3_edit1,113,23,237,14,ES_AUTOHSCROLL
+    LTEXT           "网格编号",IDC_STATIC,47,52,33,8
+    EDITTEXT        ID_log3_edit2,113,52,40,14,ES_AUTOHSCROLL
+    LTEXT           "文件编号",IDC_STATIC,177,52,33,8
+    EDITTEXT        ID_log3_edit3,243,52,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "file",IDC_STATIC,17,7,476,68
+    GROUPBOX        "flow",IDC_STATIC,17,88,476,235
+END
+
+ID_log3_tab1 DIALOGEX 0, 0, 411, 247
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_log3_tab1_ok,151,150,50,14
+    LTEXT           "马赫数",IDC_STATIC,38,38,25,8
+    EDITTEXT        ID_log3_tab1_edit1,120,38,40,14,ES_AUTOHSCROLL
+    LTEXT           "迎角/°",IDC_STATIC,38,97,23,8
+    EDITTEXT        ID_log3_tab1_edit2,120,97,40,14,ES_AUTOHSCROLL
+    LTEXT           "预处理",IDC_STATIC,201,38,25,8
+    COMBOBOX        ID_log3_tab1_combo1,251,38,48,46,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "雷诺数",IDC_STATIC,38,69,25,8
+    EDITTEXT        ID_log3_tab1_edit3,120,69,40,14,ES_AUTOHSCROLL
+END
+
+ID_log3_tab2 DIALOGEX 0, 0, 366, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_log3_tab2_ok,103,162,50,14
+    LTEXT           "动网格",IDC_STATIC,49,41,25,8
+    COMBOBOX        ID_log3_tab2_combo1,111,39,40,48,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "振幅/°",IDC_STATIC,49,85,23,8
+    EDITTEXT        ID_log3_tab2_edit1,111,86,40,14,ES_AUTOHSCROLL
+    LTEXT           "缩减频率",IDC_STATIC,49,121,33,8
+    EDITTEXT        ID_log3_tab2_edit2,111,120,40,14,ES_AUTOHSCROLL
+END
+
+ID_log3_tab3 DIALOGEX 0, 0, 396, 229
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_log3_tab3_ok,85,113,50,14
+    LTEXT           "对流通量",IDC_STATIC,57,26,33,8
+    COMBOBOX        ID_log3_tab3_combo1,125,24,48,46,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "湍流模型",IDC_STATIC,57,74,33,8
+    COMBOBOX        ID_log3_tab3_combo2,125,71,48,54,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+ID_log3_tab4 DIALOGEX 0, 0, 580, 281
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_log3_tab4_ok,264,180,50,14
+    COMBOBOX        ID_log3_tab4_combo1,213,25,48,69,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "内迭代收敛精度",IDC_STATIC,144,114,57,8
+    COMBOBOX        ID_log3_tab4_combo2,213,114,48,78,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "CFL",IDC_STATIC,19,148,13,8
+    EDITTEXT        ID_log3_tab4_edit1,86,25,40,14,ES_AUTOHSCROLL
+    LTEXT           "周期数",IDC_STATIC,15,79,25,8
+    EDITTEXT        ID_log3_tab4_edit5,86,114,40,14,ES_AUTOHSCROLL
+    LTEXT           "最大迭代次数",IDC_STATIC,16,25,48,12
+    EDITTEXT        ID_log3_tab4_edit4,350,79,40,14,ES_AUTOHSCROLL
+    LTEXT           "内迭代次数",IDC_STATIC,15,114,41,8
+    EDITTEXT        ID_log3_tab4_edit6,86,148,40,14,ES_AUTOHSCROLL
+    LTEXT           "周期步数",IDC_STATIC,144,81,33,8
+    EDITTEXT        ID_log3_tab4_edit2,86,78,40,14,ES_AUTOHSCROLL
+    LTEXT           "存储间隔步数",IDC_STATIC,289,80,49,8
+    EDITTEXT        ID_log3_tab4_edit3,213,79,48,12,ES_AUTOHSCROLL
+    GROUPBOX        "dynamic",IDC_STATIC,7,60,516,78
+    GROUPBOX        "Static",IDC_STATIC,7,7,517,43
+    LTEXT           "物理时间步",IDC_STATIC,289,25,48,12
+    EDITTEXT        ID_log3_tab4_edit7,350,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "收敛精度",IDC_STATIC,144,25,48,12
+END
+
+ID_log2 DIALOGEX 0, 0, 457, 255
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "网格设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_log2_ok,198,234,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,284,234,50,14
+    EDITTEXT        ID_log2_edit1,121,100,48,12,ES_AUTOHSCROLL
+    LTEXT           "结构网格层数",IDC_STATIC,43,102,49,8
+    LTEXT           "第一层网格厚度",IDC_STATIC,43,132,57,8
+    COMBOBOX        ID_log2_combo1,121,133,48,56,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        ID_log2_edit2,268,100,48,12,ES_AUTOHSCROLL
+    LTEXT           "增长率",IDC_STATIC,217,100,25,8
+    EDITTEXT        ID_log2_edit3,121,166,93,12,ES_AUTOHSCROLL
+    LTEXT           "翼型文件名",IDC_STATIC,43,166,41,8
+    GROUPBOX        "grid",IDC_STATIC,15,87,423,136
+    LTEXT           "绝对路径",IDC_STATIC,43,34,33,8
+    LTEXT           "网格编号",IDC_STATIC,43,58,33,8
+    EDITTEXT        ID_log2_edit4,121,32,235,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_log2_edit5,121,55,93,12,ES_AUTOHSCROLL
+    GROUPBOX        "file",IDC_STATIC,15,7,422,73
+END
+
+ID_log1 DIALOGEX 0, 0, 357, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_log1_ok,198,165,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,260,165,50,14
+    LTEXT           "绝对路径",IDC_STATIC,47,44,40,14
+    EDITTEXT        ID_log1_edit1,124,44,205,14,ES_AUTOHSCROLL
+    LTEXT           "网格编号",IDC_STATIC,47,73,40,14
+    EDITTEXT        ID_log1_edit2,124,73,40,14,ES_AUTOHSCROLL
+    LTEXT           "文件编号",IDC_STATIC,47,104,40,14
+    EDITTEXT        ID_log1_edit3,124,104,40,14,ES_AUTOHSCROLL
+END
+
+ID_log4 DIALOGEX 0, 0, 389, 255
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "后处理设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_log4_ok,131,172,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,221,172,50,14
+    LTEXT           "文件路径",IDC_STATIC,30,28,33,8
+    EDITTEXT        ID_log4_edit1,89,26,194,14,ES_AUTOHSCROLL
+    LTEXT           "网格编号",IDC_STATIC,30,60,33,8
+    EDITTEXT        ID_log4_edit2,89,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        ID_log4_edit3,208,60,40,14,ES_AUTOHSCROLL
+    LTEXT           "文件编号",IDC_STATIC,147,60,33,8
+    LTEXT           "力矩参考点",IDC_STATIC,28,118,41,8
+    EDITTEXT        ID_log4_edit4,102,113,40,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,87,113,8,8
+    EDITTEXT        ID_log4_edit5,102,129,40,14,ES_AUTOHSCROLL
+    LTEXT           "Y",IDC_STATIC,87,129,8,8
+    GROUPBOX        "file",IDC_STATIC,7,7,314,78
+    GROUPBOX        "force",IDC_STATIC,7,93,314,67
+    LTEXT           "状态",IDC_STATIC,177,120,21,8
+    COMBOBOX        ID_log4_combo1,214,117,48,41,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+ID_log5 DIALOGEX 0, 0, 145, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",ID_log5_static1,0,0,145,47
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    ID_log3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 574
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 323
+    END
+
+    ID_log3_tab1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 404
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    ID_log3_tab2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    ID_log3_tab3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    ID_log3_tab4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    ID_log2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 450
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    ID_log1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    ID_log4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    ID_log5, DIALOG
+    BEGIN
+        RIGHTMARGIN, 123
+        VERTGUIDE, 39
+        VERTGUIDE, 94
+        BOTTOMMARGIN, 38
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+#if defined(APSTUDIO_INVOKED) || defined(ID)
+#if defined(APSTUDIO_INVOKED)
+CHILDICON$(ID)          ICON                    ".\\Resource\\frameico.ico"
+#else
+CHILDICON               ICON                    ".\\Resource\\frameico.ico"
+#endif
+#endif
+FRAMEICON               ICON                    ".\\Resource\\helicopter.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "#include ""winver.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    0                       " "
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

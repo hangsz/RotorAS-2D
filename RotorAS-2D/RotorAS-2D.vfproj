@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="QuickWin" Version="11.0" ProjectIdGuid="{AF6B7EEC-354B-4384-8E1D-8A60CEAA5BA3}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtQuickWinDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemWindows"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtQuickWin"/>
+				<Tool Name="VFLinkerTool" SuppressStartupBanner="true" IgnoreDefaultLibraryNames="libcmt.lib" SubSystem="subSystemWindows" AdditionalDependencies="flowLib.lib gridLib.lib postLib.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd">
+		<File RelativePath=".\resource.h">
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFCustomBuildTool" CommandLine="defToFD  resource.h resource.FD" Description="Generating Fortran include file..." Outputs="resource.FD"/></FileConfiguration></File></Filter>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		<File RelativePath=".\Resource1.rc"/></Filter>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="menu1">
+		<File RelativePath=".\ctrl1.f90"/>
+		<File RelativePath=".\log1.f90"/></Filter>
+		<Filter Name="menu2">
+		<File RelativePath=".\ctrl2.f90"/>
+		<File RelativePath=".\log2.f90"/>
+		<File RelativePath=".\menu2.f90"/></Filter>
+		<Filter Name="menu3">
+		<File RelativePath=".\ctrl3.f90"/>
+		<File RelativePath=".\log3.f90"/>
+		<File RelativePath=".\log3_tab1.f90"/>
+		<File RelativePath=".\log3_tab2.f90"/>
+		<File RelativePath=".\log3_tab3.f90"/>
+		<File RelativePath=".\log3_tab4.f90"/>
+		<File RelativePath=".\menu3.f90"/></Filter>
+		<Filter Name="menu4">
+		<File RelativePath=".\ctrl4.f90"/>
+		<File RelativePath=".\log4.f90"/>
+		<File RelativePath=".\menu4.f90"/></Filter>
+		<Filter Name="menu5">
+		<File RelativePath=".\ctrl5.f90"/>
+		<File RelativePath=".\log5.f90"/></Filter>
+		<File RelativePath=".\Input.f90"/>
+		<File RelativePath=".\main.f90"/>
+		<File RelativePath=".\setting.f90"/>
+		<File RelativePath=".\textOut.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
