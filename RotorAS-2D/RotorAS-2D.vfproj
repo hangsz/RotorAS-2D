@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VisualStudioProject ProjectCreator="Intel Fortran" Keyword="QuickWin" Version="11.0" ProjectIdGuid="{AF6B7EEC-354B-4384-8E1D-8A60CEAA5BA3}">
 	<Platforms>
-		<Platform Name="Win32"/></Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
 	<Configurations>
 		<Configuration Name="Debug|Win32">
 				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtQuickWinDebug"/>
@@ -15,9 +16,29 @@
 				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
 		<Configuration Name="Release|Win32">
 				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtQuickWin"/>
-				<Tool Name="VFLinkerTool" SuppressStartupBanner="true" IgnoreDefaultLibraryNames="libcmt.lib" SubSystem="subSystemWindows" AdditionalDependencies="flowLib.lib gridLib.lib postLib.lib"/>
+				<Tool Name="VFLinkerTool" SuppressStartupBanner="true" IgnoreDefaultLibraryNames="libcmt.lib" SubSystem="subSystemWindows" AdditionalDependencies="flowLib.lib  gridLib.lib  postLib.lib"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtQuickWinDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemWindows"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" AdditionalIncludeDirectories="D:\Users\Hang\Documents\Visual Studio\Projects\RotorAS-2D\RotorAS-2D\RotorAS-2D-Lib" RuntimeLibrary="rtQuickWin"/>
+				<Tool Name="VFLinkerTool" SuppressStartupBanner="true" IgnoreDefaultLibraryNames="libcmt.lib" SubSystem="subSystemWindows"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
 				<Tool Name="VFCustomBuildTool"/>
 				<Tool Name="VFPreLinkEventTool"/>
 				<Tool Name="VFPreBuildEventTool"/>
@@ -26,6 +47,8 @@
 	<Files>
 		<Filter Name="Header Files" Filter="fi;fd">
 		<File RelativePath=".\resource.h">
+			<FileConfiguration Name="Release|x64">
+				<Tool Name="VFCustomBuildTool" CommandLine="defToFD  resource.h resource.FD" Description="Generating Fortran include file..." Outputs="resource.FD"/></FileConfiguration>
 			<FileConfiguration Name="Release|Win32">
 				<Tool Name="VFCustomBuildTool" CommandLine="defToFD  resource.h resource.FD" Description="Generating Fortran include file..." Outputs="resource.FD"/></FileConfiguration></File></Filter>
 		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
