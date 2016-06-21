@@ -1,7 +1,5 @@
 # RotorAS-2D
 
-
-
 RotorAS-2D (all speed) ，版本号：1.2.3。
 
 包含以下功能：
