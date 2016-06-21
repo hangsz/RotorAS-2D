@@ -1,6 +1,8 @@
 # RotorAS-2D
 
-RotorAS-2D (all speed)  版本完成，版本号：1.2.3。
+
+
+RotorAS-2D (all speed) ，版本号：1.2.3。
 
 包含以下功能：
 
@@ -18,3 +20,4 @@ RotorAS-2D (all speed)  版本完成，版本号：1.2.3。
 
 3. 后处理——压力分布和力（矩）系数或者迟滞回线计算；
 
+链接：http://cfder.club/
