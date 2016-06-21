@@ -20,4 +20,9 @@ RotorAS-2D (all speed) ，版本号：1.2.3。
 
 3. 后处理——压力分布和力（矩）系数或者迟滞回线计算；
 
-链接：http://cfder.club/
+PS： 此部分为软件GUI设计部分， 用到3个库：gridLib  flowLib  postLib，
+     其源码并没有放出来。
+     
+使用帮助：http://cfder.club/2015/12/17/rotoras-2d%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/
+
+其他链接：http://cfder.club/
