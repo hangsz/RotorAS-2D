@@ -1,4 +1,4 @@
-# RotorAS-2D
+# RotorAS-2D（翼型载荷计算）
 
 RotorAS-2D (all speed) ，版本号：1.2.3。
 
