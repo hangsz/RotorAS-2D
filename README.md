@@ -1,4 +1,4 @@
-# RotorAS-2D（ 2D 流体模拟-数值计算）
+# RotorAS-2D（ 2D 流体模拟-数值模拟）
 
 RotorAS-2D (all speed) ，版本号：1.2.3。
 
