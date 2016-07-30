@@ -17,7 +17,7 @@ RotorAS-2D (all speed) ，版本号：1.2.3。
 PS： 此部分为软件GUI设计部分， 用到3个库：gridLib  flowLib  postLib，
      其源码并没有放出来。
      
-`展示`:</br>
+`展示：`</br>
 `2D` </br>
 [Pressure Distribution of Dynamic Stall in Reverse Flow](http://v.youku.com/v_show/id_XMTYxOTU0MzQ5Mg==.html)</br>
 [Kármán Vortex Street after Aerodynamic Trailing Edge](http://v.youku.com/v_show/id_XMTYxOTU0MzgyNA==.html)</br>
@@ -26,7 +26,7 @@ PS： 此部分为软件GUI设计部分， 用到3个库：gridLib  flowLib  pos
 </br>`3D`</br>
 [The Curl Distribution in Rotor Wake](http://v.youku.com/v_show/id_XMTY0NzM1MDQyMA==.html)
      
-`算例`：[翼型动态绕流中的有趣现象]( http://cfder.club/2015/12/07/%E7%BF%BC%E5%9E%8B%E5%8A%A8%E6%80%81%E7%BB%95%E6%B5%81%E4%B8%AD%E7%9A%84%E6%9C%89%E8%B6%A3%E7%8E%B0%E8%B1%A1/) 
+`算例：`[翼型动态绕流中的有趣现象]( http://cfder.club/2015/12/07/%E7%BF%BC%E5%9E%8B%E5%8A%A8%E6%80%81%E7%BB%95%E6%B5%81%E4%B8%AD%E7%9A%84%E6%9C%89%E8%B6%A3%E7%8E%B0%E8%B1%A1/) 
 
 `个人网站`：[CFD之旅](http://cfder.club/)
 
