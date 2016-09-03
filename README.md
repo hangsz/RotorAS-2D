@@ -1,5 +1,5 @@
-# RotorAS-2D（ 2D 流体模拟-数值模拟）—— **未开源**。
-`程序量：` 2万行左右</br>
+# RotorAS-2D（ 2D 流体模拟-数值模拟）
+未开源 | `程序量：` 2万行左右</br>
 
 RotorAS-2D (all speed) ，版本号：1.2.3。
 
@@ -15,8 +15,7 @@ RotorAS-2D (all speed) ，版本号：1.2.3。
 
 3. `后处理`——压力分布和力（矩）系数或者迟滞回线计算；
 
-PS： 此部分为软件GUI设计部分， 用到3个库：gridLib  flowLib  postLib，
-     其源码并没有放出来。
+PS： 此部分为软件GUI设计部分，用到3个库：gridLib  flowLib  postLib，其源码并没有放出来。
      
 `展示：`</br>
 `2D` </br>
